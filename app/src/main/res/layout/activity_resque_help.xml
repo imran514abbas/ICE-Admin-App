@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:weightSum="10"
+    tools:context=".ResqueHelp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:src="@drawable/icon"></ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:text="Latitude"
+        android:textColor="#F80303"
+        android:textStyle="bold"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></View>
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/latitude"
+        android:layout_weight="1"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:text="Longitude"
+        android:textColor="#F60404"
+        android:textStyle="bold"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></View>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/latitude"
+        android:layout_weight="1"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Address"
+        android:textColor="#F60404"></TextView>
+    <TextView
+        android:id="@+id/stopemergency"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text=""
+        android:textColor="#4401D6"
+        android:textStyle="bold"
+        android:visibility="invisible"></TextView>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@+id/longitude"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#D50000"
+        android:onClick="Map"
+        android:text="View Location"></Button>
+
+
+
+
+
+</LinearLayout>

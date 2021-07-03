@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ICE Admin App</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="in_case_of_emergency">In Case Of Emergency</string>
+
+</resources>
